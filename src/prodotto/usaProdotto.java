@@ -41,5 +41,12 @@ public class usaProdotto {
         System.out.println("la dimensione dello schermo è: " + smartTV.getDimensione() + " pollici");
         smartTV.setSmart(true);
 
+
+        cuffie airpods = new cuffie();
+        System.out.println("Il tuo codice: " + airpods.codiceRandom());
+        airpods.setColore("bianco");
+        airpods.setWireless(true);
+        System.out.println("le cuffie sono di colore: " + airpods.getColore());
+
     }
 }
