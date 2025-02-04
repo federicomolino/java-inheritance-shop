@@ -35,5 +35,11 @@ public class usaProdotto {
         iphone.prezzoIva();
 
 
+        televisori smartTV = new televisori();
+        System.out.println("Il tuo codice: " + smartTV.codiceRandom());
+        smartTV.setDimensione(75);
+        System.out.println("la dimensione dello schermo è: " + smartTV.getDimensione() + " pollici");
+        smartTV.setSmart(true);
+
     }
 }
