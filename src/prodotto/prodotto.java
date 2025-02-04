@@ -20,6 +20,12 @@ public class prodotto {
         this.descrizione = descrizione;
     }
     
+    //utilizzata per fare in modo che le classi figlie possano avere un proprio costruttore
+    //senza richiamare il costruttore del padre
+    public prodotto(){
+
+    }
+    
     //Creo un metodo che andrà a generare un numero randomico fino a 3000
     public int codiceRandom(){
         Random ran = new Random();

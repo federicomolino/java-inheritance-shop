@@ -17,5 +17,23 @@ public class usaProdotto {
     
         //Richiamo metodo relativo alla stampa del nome e codice
         giacca.setNomeEsteso("giacca");
+
+
+        smartphone iphone = new smartphone(123456);
+        System.out.println("Il tuo codice IMEI: " + iphone.getImei());
+        //setto nuovo codice imei
+        iphone.setImei(123454567);
+        System.out.println("Il tuo codice IMEI: " + iphone.getImei());
+        //setto quantità di memoria
+        iphone.setMemoria(256);
+        System.out.println("Il tuo codice IMEI: " + iphone.getMemoria());
+        //creo codice (eridatato da prodotto)
+        iphone.codiceRandom();
+        //prezzo + iva + prezzo totale (ereditate da prodotto)
+        iphone.setPrezzoIniziale(500);
+        iphone.setDefaultIva(22);
+        iphone.prezzoIva();
+
+
     }
 }
