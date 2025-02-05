@@ -7,7 +7,8 @@ public class televisori extends prodotto {
     private boolean smart;
 
     public televisori(){
-        codiceRandom();
+        
+        System.out.println("Il tuo codice: " + codiceRandom());
     }
 
     public double getDimensione() {
@@ -28,7 +29,14 @@ public class televisori extends prodotto {
     }
 
     public void setSmart(boolean smart) {
-        this.smart = smart;
+        if (smart) {
+            this.smart = smart;
+            System.out.println("Hai la televione smart");
+        }else{
+            this.smart = smart;
+            System.out.println("Non hai la televione smart");
+        }
+       
     }
 
     

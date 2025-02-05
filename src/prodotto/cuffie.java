@@ -7,7 +7,7 @@ public class cuffie extends prodotto{
     private boolean wireless;
 
     public cuffie(){
-        codiceRandom();
+        System.out.println("Il tuo codice: " + codiceRandom());
     }
 
     public String getColore() {
@@ -15,7 +15,12 @@ public class cuffie extends prodotto{
     }
 
     public void setColore(String colore) {
-        this.colore = colore;
+        if (colore != null && colore.length() > 2) {
+            this.colore = colore;
+            System.out.println("le cuffie sono di colore: " + getColore());
+        }else{
+            System.out.println("Il colore inserito non è valido");
+        }
     }
 
     public boolean isWireless() {

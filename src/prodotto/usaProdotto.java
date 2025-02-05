@@ -1,5 +1,4 @@
 package prodotto;
-
 public class usaProdotto {
     public static void main(String[] args) throws Exception {
 
@@ -31,15 +30,14 @@ public class usaProdotto {
 
 
         televisori smartTV = new televisori();
-        System.out.println("Il tuo codice: " + smartTV.codiceRandom());
         smartTV.setDimensione(75);
-        smartTV.setSmart(true);
+        smartTV.getDimensione();
+        smartTV.setSmart(false);
 
         cuffie airpods = new cuffie();
-        System.out.println("Il tuo codice: " + airpods.codiceRandom());
-        airpods.setColore("bianco");
+        airpods.setColore(null);
+        airpods.getColore();
         airpods.setWireless(true);
-        System.out.println("le cuffie sono di colore: " + airpods.getColore());
 
     }
 }
