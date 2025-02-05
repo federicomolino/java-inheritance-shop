@@ -15,7 +15,12 @@ public class televisori extends prodotto {
     }
 
     public void setDimensione(double dimensione) {
-        this.dimensione = dimensione;
+        if (dimensione < 24) {
+            System.out.println("La dimensione di un televisore deve essere almeno di 24 pollici");
+        }else{
+            this.dimensione = dimensione;
+            System.out.println("la dimensione dello schermo è: " + dimensione + " pollici");
+        }
     }
 
     public boolean isSmart() {

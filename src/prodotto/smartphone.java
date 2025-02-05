@@ -6,19 +6,16 @@ public class smartphone extends prodotto{
     protected double memoria;
 
     public smartphone(int imei){
-        this.imei = imei;
+        if (imei == 0) {
+            System.out.println("Il codice IEMEI non può essere 0, ma parte da 1");
+        }else{
+            this.imei = imei;
+            System.out.println("Il tuo codice IMEI: " + imei);
+        }
     }
 
     public int getImei() {
         return imei;
-    }
-
-    public void setImei(int imei) {
-        this.imei = imei;
-    }
-
-    public void stampaImei(){
-        System.out.println("Il tuo codice IMEI: " + imei);
     }
 
     public double getMemoria() {
@@ -26,7 +23,12 @@ public class smartphone extends prodotto{
     }
 
     public void setMemoria(double memoria) {
-        this.memoria = memoria;
+        if (memoria == 0) {
+            System.out.println("La memoria deve essere impostata almeno ad 1!");
+        }else{
+            this.memoria = memoria;
+            System.out.println("La memoria impostato totale è: " + memoria);
+        }
     }
 
     
