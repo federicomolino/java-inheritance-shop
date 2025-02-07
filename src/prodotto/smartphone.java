@@ -5,7 +5,9 @@ public class smartphone extends prodotto{
 
     protected double memoria;
 
-    public smartphone(int imei){
+    public smartphone(String descrizione, int imei,double memoria){
+        super(descrizione);
+
         if (imei == 0) {
             System.out.println("Il codice IEMEI non può essere 0, ma parte da 1");
         }else{
@@ -13,6 +15,15 @@ public class smartphone extends prodotto{
             System.out.println("Il tuo codice IMEI: " + imei);
         }
     }
+
+    /*public smartphone(int imei){
+        if (imei == 0) {
+            System.out.println("Il codice IEMEI non può essere 0, ma parte da 1");
+        }else{
+            this.imei = imei;
+            System.out.println("Il tuo codice IMEI: " + imei);
+        }
+    }*/
 
     public int getImei() {
         return imei;
@@ -31,6 +42,9 @@ public class smartphone extends prodotto{
         }
     }
 
-    
+    @Override
+    public String toStringStampa(){
+        return "Smartphone: " + descrizione + ", IMEI: " + imei + ", Memoria: " + memoria + "GB";
+    }
 
 }

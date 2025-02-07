@@ -6,9 +6,8 @@ public class televisori extends prodotto {
 
     private boolean smart;
 
-    public televisori(){
-        
-        System.out.println("Il tuo codice: " + codiceRandom());
+    public televisori(String descrizione){
+        super(descrizione);
     }
 
     public double getDimensione() {
@@ -37,6 +36,11 @@ public class televisori extends prodotto {
             System.out.println("Non hai la televione smart");
         }
        
+    }
+
+    @Override
+    public String toStringStampa(){
+        return "Prodotto: " + descrizione;
     }
 
     

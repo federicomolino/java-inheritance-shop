@@ -16,13 +16,16 @@ public class prodotto {
     private String nomeProdotto;
 
     public prodotto(String descrizione){
-        codiceRandom();
         this.descrizione = descrizione;
+        Random ran = new Random();
+        int max = 3000;
+        codice = ran.nextInt(max);
+        System.out.println("Il tuo codice: " + codice);
     }
     
     //utilizzata per fare in modo che le classi figlie possano avere un proprio costruttore
     //senza richiamare il costruttore del padre
-    public prodotto(){
+    /*public prodotto(){
 
     }
     
@@ -32,7 +35,7 @@ public class prodotto {
         int max = 3000;
         codice = ran.nextInt(max);
         return codice;
-    }
+    }*/
 
     public int getCodice() {
         return codice;
@@ -84,4 +87,10 @@ public class prodotto {
     public String getNomeProdotto() {
         return nomeProdotto;
     }
+
+    public String toStringStampa(){
+        return "Prodotto: " + descrizione + ", Codice: " + codice;
+    }
+
+    
 }

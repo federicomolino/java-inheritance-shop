@@ -6,8 +6,8 @@ public class cuffie extends prodotto{
 
     private boolean wireless;
 
-    public cuffie(){
-        System.out.println("Il tuo codice: " + codiceRandom());
+    public cuffie(String descrizione){
+        super(descrizione);
     }
 
     public String getColore() {
@@ -29,5 +29,10 @@ public class cuffie extends prodotto{
 
     public void setWireless(boolean wireless) {
         this.wireless = wireless;
+    }
+
+    @Override
+    public String toStringStampa(){
+        return "Prodotto: " + descrizione;
     }
 }
