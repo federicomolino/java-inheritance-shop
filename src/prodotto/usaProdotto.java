@@ -18,7 +18,7 @@ public class usaProdotto {
 
         smartphone iphone = new smartphone("Ciao", 123456, 33);
         //setto quantità di memoria
-        iphone.setMemoria(0);
+        //iphone.setMemoria(0);
         //prezzo + iva + prezzo totale (ereditate da prodotto)
         iphone.setPrezzoIniziale(500);
         iphone.setDefaultIva(22);

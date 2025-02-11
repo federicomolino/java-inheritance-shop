@@ -40,7 +40,7 @@ public class televisori extends prodotto {
 
     @Override
     public String toStringStampa(){
-        return "Prodotto: " + descrizione;
+        return "Prodotto: " + descrizione + ", Codice: " + getCodice();
     }
 
     

@@ -42,7 +42,7 @@ public class smartphone extends prodotto{
 
     @Override
     public String toStringStampa(){
-        return "Smartphone: " + descrizione + ", IMEI: " + imei + ", Memoria: " + memoria + "GB";
+        return "Smartphone: " + descrizione + ", IMEI: " + imei + ", Memoria: " + memoria + "GB" + ", Codice: " + getCodice();
     }
 
 }
